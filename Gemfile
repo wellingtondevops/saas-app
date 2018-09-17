@@ -10,6 +10,9 @@ end
 gem 'rails', '~> 5.1.0'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.5'
+
+gem 'devise'
+gem 'milia'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -58,3 +61,5 @@ group :production do
   gem 'rails_12factor'
 
 end
+
+gem 'activerecord-session_store', github: 'rails/activerecord-session_store'
