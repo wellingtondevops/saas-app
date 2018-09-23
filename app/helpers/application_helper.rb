@@ -1,5 +1,5 @@
 module ApplicationHelper
-  module BootstrapFlashHelper
+  #module BootstrapFlashHelper
     ALERT_TYPES = [:success, :info, :warning, :danger] unless const_defined?(:ALERT_TYPES)
   
     def bootstrap_flash(options = {})
@@ -28,5 +28,5 @@ module ApplicationHelper
       end
       flash_messages.join("\n").html_safe
     end
-  end
+  #end
 end
