@@ -4,6 +4,8 @@
         <h4>Create Password</h4>
     </div>
     <div class="panel-body">
+        
+        
         <%= form_for(resource, :as => resource_name, :url => update_user_confirmation_path, 
         :html => { :method => :put, :class => "form login" }) do |f| %>
             <%= hidden_field_tag :confirmation_token, @confirmation_token %>
